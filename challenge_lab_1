@@ -93,3 +93,7 @@ resource "kubernetes_service" "webapp-service" {
     type = "NodePort"
   }
 }
+
+# Launch everything
+
+terraform init && terraform plan && terraform apply -auto-approve
